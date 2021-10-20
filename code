@@ -1,0 +1,15 @@
+import time
+num=input("Rakam giriniz:")
+bekle=input("Kaç saniye beklensin:")
+num=int(num)
+bekle=int(bekle)
+factorial = 1
+if num < 0:
+   print("Eksi sayıların faktoriyeli hesaplanamaz.")
+elif num == 0:
+   print("0 faktoriyelin cevabı 1'dir")
+else:
+   for i in range(1,num + 1):
+       factorial = factorial*i
+   time.sleep(bekle)
+   print("sayisinın",num,"faktoryeli",factorial)
